@@ -10,5 +10,5 @@ language: cpp
 script:
     - cmake CMakeLists.txt
     - make
-    - ./catch_example
+    - ./assert_example
 

@@ -23,8 +23,8 @@
 
 
 // TIP: Must have file guards not #pragma is Windows specific
-#ifndef CATCH_EXAMPLE_RATIONAL_H
-#define CATCH_EXAMPLE_RATIONAL_H
+#ifndef ASSERT_EXAMPLE_RATIONAL_H
+#define ASSERT_EXAMPLE_RATIONAL_H
 
 #include <iostream>
 
@@ -124,4 +124,4 @@ class Rational {
   void reduce();
 };
 
-#endif  // CATCH_EXAMPLE_RATIONAL_H
+#endif  // ASSERT_EXAMPLE_RATIONAL_H
