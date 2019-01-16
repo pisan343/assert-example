@@ -18,7 +18,8 @@ echo "*** cpplint"
 cpplint *.cpp *.h
 
 echo "*** cppcheck"
-cppcheck --enable=all --force --inconclusive --language=c++ --std=c++14 --suppress=missingIncludeSystem *.cpp *.h
+# CSS Linux lab has cppcheck version 1.72 which only has c++11, removing --std=c++14
+cppcheck --enable=all --force --inconclusive --language=c++ --suppress=missingIncludeSystem *.cpp *.h
 
 echo "*** running"
 ./myprogram.exe

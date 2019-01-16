@@ -51,11 +51,10 @@ void testRationalInsertExtract() {
 
 // Testing vectors math
 void testRationalMath() {
-  Rational r12(1, 2);
-  Rational r23(2, 3);
-
   // add
   {
+    Rational r12(1, 2);
+    Rational r23(2, 3);
     Rational r = r12 + r23;
     assert(r.getNumerator() == 7);
     assert(r.getDenominator() == 6);
@@ -66,6 +65,8 @@ void testRationalMath() {
 
   // subtract
   {
+    Rational r12(1, 2);
+    Rational r23(2, 3);
     Rational r = r12 - r23;
     assert(r.getNumerator() == -1);
     assert(r.getDenominator() == 6);
@@ -76,6 +77,8 @@ void testRationalMath() {
 
   // multiply
   {
+    Rational r12(1, 2);
+    Rational r23(2, 3);
     Rational r = r12 * r23;
     assert(r.getNumerator() == 1);
     assert(r.getDenominator() == 3);
@@ -86,6 +89,8 @@ void testRationalMath() {
 
   // divide
   {
+    Rational r12(1, 2);
+    Rational r23(2, 3);
     Rational r = r12 / r23;
     assert(r.getNumerator() == 3);
     assert(r.getDenominator() == 4);
